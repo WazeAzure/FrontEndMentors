@@ -1,0 +1,134 @@
+
+body {
+  background-color: hsl(210, 46%, 95%);
+}
+.body-container {
+
+}
+.message-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 600px;
+}
+.left {
+  width: 300px;
+  height: 300px;
+  box-shadow: 10px 20px 30px rgb(180,180,180);\
+}
+#left-image {
+  width: 300px;
+  height: 300px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.right {
+  background-color: white;
+  width: 590px;
+  height: 300px;
+  font-family: 'Manrope',sans-serif;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 10px 20px 30px rgb(180,180,180) ;
+}
+.right h2 {
+  color: hsl(217, 19%, 35%);
+}
+.right p {
+  color: hsl(214, 17%, 51%);
+  font-size: 13px;
+  line-height: 20px;
+}
+.right-container {
+  width: 80%;
+  margin: auto;
+}
+.right-down img{
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: flex-start;
+}
+.right-down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mask {
+  border-radius: 50%;
+
+}
+.right-down-text {
+  margin-left: 15px;
+}
+.right-down-text p{
+  line-height: 0;
+  padding-bottom: 10px;
+}
+#name {
+  color: hsl(217, 19%, 35%);
+}
+svg {
+  width: 15px;
+  height: 13px;
+  display: flex;
+  align-self: center;
+}
+svg:hover {
+  opacity: 0.8;
+}
+.right-down-popups {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  display: none;
+  width: 100px;
+}
+.icon {
+  padding: 0 5px !important;
+  width: 13px !important;
+  height: 13px !important;
+}
+.right-down-icon-popup {
+  display: none;
+  width: 200px;
+  height: 30px;
+  background-color: hsl(217, 19%, 35%);
+  float: left;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  z-index: 4;
+  padding: 3px;
+
+}
+.right-down-icon-popup p {
+  padding-right: 10px;
+  width: 100px;
+  display: inline-block;
+}
+
+.triangle-down {
+  display: none;
+  width: 0;
+	height: 0;
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	border-top: 45px solid hsl(217, 19%, 35%);
+  z-index: 1;
+  position: absolute;
+}
+.profile {
+  display: flex;
+
+}
+.share-icon {
+  justify-content: flex-end;
+  position: static;
+  z-index: 10;
+}
