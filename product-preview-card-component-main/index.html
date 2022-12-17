@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat" >
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Fraunces">
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    html{
+      background-color: hsl(30, 38%, 92%);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    body {
+      display: grid;
+      grid-template-rows: auto 10%;
+    }
+
+    .body-container {
+      width: 630px;
+      margin: auto;
+      background-color: white;
+      display: grid;
+      grid-template-columns: 50% auto;
+      border-radius: 10px;
+    }
+
+    .img {
+      margin: 0;
+    }
+
+    img {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      width: 100%;
+      height: auto;
+    }
+
+    .desc {
+      padding: 20px;
+    }
+
+    #item-type {
+      font-family: "Montserrat";
+      color: hsl(228, 12%, 48%);
+    }
+
+    h1 {
+      font-family: "Fraunces";
+      font-weight: 700;
+      color: hsl(212, 21%, 14%);
+    }
+
+    #item-description {
+      font-family: "Montserrat";
+      line-height: 1.5rem;
+      font-size: 14px;
+      color: hsl(228, 12%, 48%);
+      font-weight: 500;
+    }
+
+    .price {
+      height: 100px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+    }
+
+    #price-disc {
+      font-weight: 700;
+      font-size: 40px;
+      font-family: "Fraunces";
+      color: hsl(158, 36%, 37%);
+      display: inline;
+    }
+
+    #price-real {
+      display: inline;
+    }
+
+    svg {
+      display: inline;
+      font-size: 20px;
+    }
+
+
+    #button {
+      background-color:hsl(158, 36%, 37%);
+      color: white;
+      font-family: "Montserrat";
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+    }
+
+    #button:hover {
+      background-color: hsl(158, 36%, 20%);
+      cursor: pointer;
+    }
+
+    .attribution { 
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    #product-img-mb {
+      display: none;
+    }
+    @media only screen and (max-width: 375px) {
+      #product-img-mb {
+        display: block;
+      }
+      #product-img {
+        display: none;
+      }
+
+      .body-container {
+        display: container;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        width: 300px;
+      }
+
+      img {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="body-container">
+    <img id="product-img" src="./images/image-product-desktop.jpg">
+    <img id="product-img-mb" src="./images/image-product-mobile.jpg">
+    <div class="desc"> 
+      <p id="item-type">PERFUME</p>
+      <h1>Gabrielle Essence Eau De Parfum</h1>
+      
+
+      <p id="item-description">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.</p>
+      
+      <div class="price">
+        <p id="price-disc">$149.99</p>
+        <p id="price-real" style="text-decoration: line-through; color:hsl(228, 12%, 48%); padding-left: 10px;">$169.99</p>
+      </div>
+  
+      <div id="button">
+        <svg width="14.38px" height="16px" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>
+        <p style="padding-left: 10px;">Add to Cart</p>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">WazeAzure</a>.
+  </div>
+</body>
+</html>
